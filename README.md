@@ -33,3 +33,17 @@ Buzz
 
 ## References
 - https://codingdojo.org/kata/FizzBuzz/
+
+# Test list
+-[ ] 1 -> "1"
+-[ ] 2 -> "2"
+-[ ] 3 -> "Fizz"
+-[ ] 6 -> "Fizz"
+-[ ] 4 -> "4"
+-[ ] 5 -> "Buzz"
+-[ ] 10 -> "Buzz"
+-[ ] 15 -> "FizzBuzz"
+-[ ] 30 -> "FizzBuzz"
+-[ ] from 1, count 0 -> []
+-[ ] from 1, count 1 -> ["1"]
+-[ ] from 1, count 3 -> ["1", "2", "Fizz"]
