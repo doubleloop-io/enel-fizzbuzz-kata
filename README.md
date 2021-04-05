@@ -44,6 +44,6 @@ Buzz
 -[X] 10 -> "Buzz"
 -[X] 15 -> "FizzBuzz"
 -[X] 30 -> "FizzBuzz"
--[ ] from 1, count 0 -> []
--[ ] from 1, count 1 -> ["1"]
--[ ] from 1, count 3 -> ["1", "2", "Fizz"]
+-[X] from 1, count 0 -> []
+-[X] from 1, count 1 -> ["1"]
+-[X] from 1, count 3 -> ["1", "2", "Fizz"]

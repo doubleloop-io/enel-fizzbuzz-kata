@@ -37,4 +37,11 @@ public class FizzBuzzTests {
 
         assertThat(machine.say(number)).isEqualTo("FizzBuzz");
     }
+
+    @Test
+    void sayManyNumbers() {
+        FizzBuzzMachine machine = new FizzBuzzMachine();
+
+        assertThat(machine.say(1, 5)).isEqualTo(new String[]{"1", "2", "Fizz", "4", "Buzz"});
+    }
 }
