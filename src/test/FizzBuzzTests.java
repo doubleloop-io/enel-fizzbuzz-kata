@@ -24,7 +24,14 @@ public class FizzBuzzTests {
         assertThat(fizzBuzz(number)).isEqualTo("Buzz");
     }
 
+    @ParameterizedTest
+    @ValueSource(ints = {3 * 5, 2 * 3 * 5})
+    void sayFizzBuzz(int number) {
+        assertThat(fizzBuzz(number)).isEqualTo("FizzBuzz");
+    }
+
     private String fizzBuzz(int number) {
+        if (number % 3 == 0 && number % 5 == 0) return "FizzBuzz";
         if (number % 3 == 0) return "Fizz";
         if (number % 5 == 0) return "Buzz";
         return Integer.toString(number);
