@@ -18,8 +18,15 @@ public class FizzBuzzTests {
         assertThat(fizzBuzz(number)).isEqualTo("Fizz");
     }
 
+    @ParameterizedTest
+    @ValueSource(ints = {5, 5 * 2})
+    void sayBuzz(int number) {
+        assertThat(fizzBuzz(number)).isEqualTo("Buzz");
+    }
+
     private String fizzBuzz(int number) {
         if (number % 3 == 0) return "Fizz";
+        if (number % 5 == 0) return "Buzz";
         return Integer.toString(number);
     }
 }

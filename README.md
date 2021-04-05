@@ -40,8 +40,8 @@ Buzz
 -[X] 3 -> "Fizz"
 -[X] 6 -> "Fizz"
 -[X] 4 -> "4"
--[ ] 5 -> "Buzz"
--[ ] 10 -> "Buzz"
+-[X] 5 -> "Buzz"
+-[X] 10 -> "Buzz"
 -[ ] 15 -> "FizzBuzz"
 -[ ] 30 -> "FizzBuzz"
 -[ ] from 1, count 0 -> []
