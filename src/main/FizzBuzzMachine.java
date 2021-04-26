@@ -22,4 +22,14 @@ public class FizzBuzzMachine {
                 .mapToObj(this::say)
                 .toArray(String[]::new);
     }
+
+    public class DivisorAndWord {
+        public int divisor;
+        public String word;
+
+        public DivisorAndWord(int divisor, String word) {
+            this.divisor = divisor;
+            this.word = word;
+        }
+    }
 }
