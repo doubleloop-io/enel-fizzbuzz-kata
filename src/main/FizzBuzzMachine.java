@@ -14,10 +14,15 @@ public class FizzBuzzMachine {
     public String say(int number) {
         String result = "";
         for (DivisorAndWord divisorAndWord : divisorAndWords) {
-            if (isDivisibleBy(number, divisorAndWord.divisor)) result += divisorAndWord.word;
+            result += wordIfDivisibleOrEmpty(number, divisorAndWord);
         }
         if (!result.isEmpty()) return result;
         return Integer.toString(number);
+    }
+
+    private String wordIfDivisibleOrEmpty(int number, DivisorAndWord divisorAndWord) {
+        if (isDivisibleBy(number, divisorAndWord.divisor)) return divisorAndWord.word;
+        return "";
     }
 
     private boolean isDivisibleBy(int number, int divisor) {

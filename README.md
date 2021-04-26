@@ -48,3 +48,4 @@ Buzz
 - [X] from 1, count 1 -> ["1"]
 - [X] from 1, count 3 -> ["1", "2", "Fizz"]
 - [ ] rename DivisorAndWord
+- [ ] rename toBeConcatenated
