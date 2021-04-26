@@ -13,9 +13,8 @@ public class FizzBuzzMachine {
 
     public String say(int number) {
         String result = "";
-        for (DivisorAndWord divisorAndWord : divisorAndWords) {
+        for (DivisorAndWord divisorAndWord : divisorAndWords)
             result += divisorAndWord.wordIfDivisibleOrEmpty(number);
-        }
         if (!result.isEmpty()) return result;
         return Integer.toString(number);
     }
@@ -27,8 +26,8 @@ public class FizzBuzzMachine {
     }
 
     public class DivisorAndWord {
-        public int divisor;
-        public String word;
+        private final int divisor;
+        private final String word;
 
         public DivisorAndWord(int divisor, String word) {
             this.divisor = divisor;
