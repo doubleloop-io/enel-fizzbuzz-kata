@@ -3,8 +3,12 @@ import java.util.stream.IntStream;
 public class FizzBuzzMachine {
     public String say(int number) {
         String result = "";
-        if (isDivisibleBy(number, 3)) result += "Fizz";
-        if (isDivisibleBy(number, 5)) result += "Buzz";
+        int divisor1 = 3;
+        String word1 = "Fizz";
+        int divisor2 = 5;
+        String word2 = "Buzz";
+        if (isDivisibleBy(number, divisor1)) result += word1;
+        if (isDivisibleBy(number, divisor2)) result += word2;
         if (!result.isEmpty()) return result;
         return Integer.toString(number);
     }
