@@ -21,12 +21,8 @@ public class FizzBuzzMachine {
     }
 
     private String wordIfDivisibleOrEmpty(int number, DivisorAndWord divisorAndWord) {
-        if (isDivisibleBy(number, divisorAndWord.divisor)) return divisorAndWord.word;
+        if (divisorAndWord.isDivisibleBy(number)) return divisorAndWord.word;
         return "";
-    }
-
-    private boolean isDivisibleBy(int number, int divisor) {
-        return number % divisor == 0;
     }
 
     public String[] say(int from, int count) {
@@ -42,6 +38,10 @@ public class FizzBuzzMachine {
         public DivisorAndWord(int divisor, String word) {
             this.divisor = divisor;
             this.word = word;
+        }
+
+        public boolean isDivisibleBy(int number) {
+            return number % divisor == 0;
         }
     }
 }
