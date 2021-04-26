@@ -12,6 +12,7 @@ public class FizzBuzzMachine {
             result += "Buzz";
             return "Buzz";
         }
+        if (!result.isEmpty()) return result;
         return Integer.toString(number);
     }
 
