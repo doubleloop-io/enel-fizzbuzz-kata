@@ -4,11 +4,8 @@ public class FizzBuzzMachine {
 
     private final DivisorAndWord[] divisorAndWords;
 
-    public FizzBuzzMachine() {
-        divisorAndWords = new DivisorAndWord[] {
-                new DivisorAndWord(3, "Fizz"),
-                new DivisorAndWord(5, "Buzz")
-        };
+    public FizzBuzzMachine(DivisorAndWord[] divisorAndWords) {
+        this.divisorAndWords = divisorAndWords;
     }
 
     public String say(int number) {

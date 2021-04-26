@@ -1,6 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        FizzBuzzMachine fizzBuzz = new FizzBuzzMachine();
+        FizzBuzzMachine fizzBuzz = new FizzBuzzMachine(new DivisorAndWord[]{
+                new DivisorAndWord(3, "Fizz"),
+                new DivisorAndWord(5, "Buzz")
+        });
 
         for (String fizzBuzzed : fizzBuzz.say(1, 100)) {
             System.out.println(fizzBuzzed);
