@@ -35,15 +35,15 @@ Buzz
 - https://codingdojo.org/kata/FizzBuzz/
 
 # Test list
--[X] 1 -> "1"
--[X] 2 -> "2"
--[X] 3 -> "Fizz"
--[X] 6 -> "Fizz"
--[X] 4 -> "4"
--[X] 5 -> "Buzz"
--[X] 10 -> "Buzz"
--[X] 15 -> "FizzBuzz"
--[X] 30 -> "FizzBuzz"
--[X] from 1, count 0 -> []
--[X] from 1, count 1 -> ["1"]
--[X] from 1, count 3 -> ["1", "2", "Fizz"]
+- [X] 1 -> "1"
+- [X] 2 -> "2"
+- [X] 3 -> "Fizz"
+- [X] 6 -> "Fizz"
+- [X] 4 -> "4"
+- [X] 5 -> "Buzz"
+- [X] 10 -> "Buzz"
+- [X] 15 -> "FizzBuzz"
+- [X] 30 -> "FizzBuzz"
+- [X] from 1, count 0 -> []
+- [X] from 1, count 1 -> ["1"]
+- [X] from 1, count 3 -> ["1", "2", "Fizz"]
