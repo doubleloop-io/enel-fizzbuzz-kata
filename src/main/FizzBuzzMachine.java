@@ -8,7 +8,10 @@ public class FizzBuzzMachine {
             result += "Fizz";
             return "Fizz";
         }
-        if (number % 5 == 0) return "Buzz";
+        if (number % 5 == 0) {
+            result += "Buzz";
+            return "Buzz";
+        }
         return Integer.toString(number);
     }
 
