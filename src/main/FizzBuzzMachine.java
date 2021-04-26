@@ -1,14 +1,17 @@
 import java.util.stream.IntStream;
 
 public class FizzBuzzMachine {
-    public String say(int number) {
-        DivisorAndWord[] divisorAndWords = new DivisorAndWord[] {
+
+    private final DivisorAndWord[] divisorAndWords;
+
+    public FizzBuzzMachine() {
+        divisorAndWords = new DivisorAndWord[] {
                 new DivisorAndWord(3, "Fizz"),
                 new DivisorAndWord(5, "Buzz")
         };
+    }
 
-
-
+    public String say(int number) {
         String result = "";
         for (DivisorAndWord divisorAndWord : divisorAndWords) {
             if (isDivisibleBy(number, divisorAndWord.divisor)) result += divisorAndWord.word;
