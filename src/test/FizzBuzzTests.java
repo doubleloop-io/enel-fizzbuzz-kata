@@ -19,25 +19,19 @@ public class FizzBuzzTests {
 
     @ParameterizedTest
     @CsvSource({"1,1", "2,2", "4,4"})
-    void standardNumber(int number, String expected) {
+    void noMatches(int number, String expected) {
         assertThat(machine.say(number)).isEqualTo(expected);
     }
 
     @ParameterizedTest
     @ValueSource(ints = {3, 3 * 2})
-    void sayFizz(int number) {
+    void matchOneRule(int number) {
         assertThat(machine.say(number)).isEqualTo("Fizz");
     }
 
     @ParameterizedTest
-    @ValueSource(ints = {5, 5 * 2})
-    void sayBuzz(int number) {
-        assertThat(machine.say(number)).isEqualTo("Buzz");
-    }
-
-    @ParameterizedTest
     @ValueSource(ints = {3 * 5, 2 * 3 * 5})
-    void sayFizzBuzz(int number) {
+    void matchManyRules(int number) {
         assertThat(machine.say(number)).isEqualTo("FizzBuzz");
     }
 
