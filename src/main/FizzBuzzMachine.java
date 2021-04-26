@@ -5,10 +5,12 @@ public class FizzBuzzMachine {
         String result = "";
         int divisor1 = 3;
         String word1 = "Fizz";
+        DivisorAndWord divisorAndWord1 = new DivisorAndWord(divisor1, word1);
         int divisor2 = 5;
         String word2 = "Buzz";
-        if (isDivisibleBy(number, divisor1)) result += word1;
-        if (isDivisibleBy(number, divisor2)) result += word2;
+        DivisorAndWord divisorAndWord2 = new DivisorAndWord(divisor2, word2);
+        if (isDivisibleBy(number, divisorAndWord1.divisor)) result += divisorAndWord1.word;
+        if (isDivisibleBy(number, divisorAndWord2.divisor)) result += divisorAndWord2.word;
         if (!result.isEmpty()) return result;
         return Integer.toString(number);
     }
