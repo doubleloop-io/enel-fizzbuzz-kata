@@ -3,12 +3,8 @@ import java.util.stream.IntStream;
 public class FizzBuzzMachine {
     public String say(int number) {
         String result = "";
-        if (number % 3 == 0) {
-            result += "Fizz";
-        }
-        if (number % 5 == 0) {
-            result += "Buzz";
-        }
+        if (number % 3 == 0) result += "Fizz";
+        if (number % 5 == 0) result += "Buzz";
         if (!result.isEmpty()) return result;
         return Integer.toString(number);
     }
