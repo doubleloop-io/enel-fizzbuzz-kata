@@ -2,11 +2,17 @@ import java.util.stream.IntStream;
 
 public class FizzBuzzMachine {
     public String say(int number) {
+        DivisorAndWord[] divisorAndWords = new DivisorAndWord[] {
+                new DivisorAndWord(3, "Fizz"),
+                new DivisorAndWord(5, "Buzz")
+        };
+
+
+
         String result = "";
-        DivisorAndWord divisorAndWord1 = new DivisorAndWord(3, "Fizz");
-        DivisorAndWord divisorAndWord2 = new DivisorAndWord(5, "Buzz");
-        if (isDivisibleBy(number, divisorAndWord1.divisor)) result += divisorAndWord1.word;
-        if (isDivisibleBy(number, divisorAndWord2.divisor)) result += divisorAndWord2.word;
+        for (DivisorAndWord divisorAndWord : divisorAndWords) {
+            if (isDivisibleBy(number, divisorAndWord.divisor)) result += divisorAndWord.word;
+        }
         if (!result.isEmpty()) return result;
         return Integer.toString(number);
     }
