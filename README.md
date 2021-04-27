@@ -48,4 +48,6 @@ Buzz
 - [X] from 1, count 1 -> ["1"]
 - [X] from 1, count 3 -> ["1", "2", "Fizz"]
 - [ ] rename DivisorAndWord
-- [ ] rename toBeConcatenated
+- [ ] rename wordIfDivisibleOrEmpty
+- [ ] use map and reduce instead of a for-loop and concatenate
+- [ ] use Option/Maybe (FP style) instead of empty string in wordIfDivisibleOrEmpty
